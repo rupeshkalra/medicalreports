@@ -101,8 +101,9 @@ const Add = ({navigation}) => {
       if(d.getMinutes().toString().length==1){
         min="0"+d.getMinutes();
       }
+      var month=d.getMonth()+1;
+      const date="Last updated -  "+d.getHours()+":"+min+"  |  "+d.getDate()+"/"+month+"/"+d.getFullYear();
       
-      const date="Last updated -  "+d.getHours()+":"+min+"  |  "+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
       const reporttoAdd = {
         id: shortid.generate(),
         name: name,

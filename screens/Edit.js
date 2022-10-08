@@ -108,8 +108,8 @@ const Edit=({navigation,route})=>{
       if(d.getMinutes().toString().length==1){
         min="0"+d.getMinutes();
       }
-      
-      const date="Last updated -  "+d.getHours()+":"+min+"  |  "+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+      var month=d.getMonth()+1;
+      const date="Last updated -  "+d.getHours()+":"+min+"  |  "+d.getDate()+"/"+month+"/"+d.getFullYear();
       
       list.map((report)=>{
         if(report.id==id){

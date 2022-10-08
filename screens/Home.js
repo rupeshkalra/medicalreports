@@ -143,7 +143,8 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   listItem: {
-    marginLeft: 0,
+    marginLeft: 10,
+    marginRight:10,
     marginBottom: 20,
     backgroundColor: '#D3D3D3',
     borderRadius: 10,
